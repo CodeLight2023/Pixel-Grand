@@ -55,7 +55,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--);
+    background: var(--light-white);
     /* box-shadow: 0 2px 2px var(--shadow); */
 }
 header nav .logo img {
