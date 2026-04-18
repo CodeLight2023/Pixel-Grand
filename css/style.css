@@ -305,7 +305,7 @@ header nav .menu-btn .icon.menu-icon {
 }
 #digitalGrowth .dg-box {
     width: 100%;
-    height: 220px;
+    height: 240px;
     text-align: center;
     padding: 15px;
     box-shadow: 0 0 3px var(--shadow);
@@ -315,8 +315,11 @@ header nav .menu-btn .icon.menu-icon {
 #digitalGrowth .row {
     margin-top: 50px;
 }
+#digitalGrowth .dg-box .icon {
+    margin: 20px 0;
+}
 #digitalGrowth .dg-box .icon i {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--black);
     padding: 10px 0;
 }
@@ -413,25 +416,26 @@ header nav .menu-btn .icon.menu-icon {
     padding-top: 50px;
 }
 #whyP .whyp-box {
+    width: 100%;
+    height: 120px;
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 10px;
     padding: 20px;
     margin: 20px 0;
     border: 1px solid var(--lighter-brown);
     transition: 0.8s ease-in-out;
 }
 #whyP .whyp-box:hover {
-    box-shadow: 0 0 10px var(--shadow);
+    box-shadow: 0 0 8px var(--shadow);
 }
 #whyP .whyp-box .icon {
     width: 50px;
     height: 50px;
     display: flex;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     background: var(--lighter-brown);
 }
 #whyP .whyp-box .icon i {
@@ -439,16 +443,21 @@ header nav .menu-btn .icon.menu-icon {
     color: var(--black);
 }
 #whyP .whyp-box .content h2 {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--dark);
 }
 #whyP .whyp-box .content p {
     color: var(--grey);
-    font-size: 15px;
+    font-size: 14px;
 }
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 45px;
+    }
+}
+@media (max-width: 990px) {
+    #whyP .whyp-box {
+        height: auto;
     }
 }
 @media (max-width: 992px) {
@@ -493,6 +502,8 @@ header nav .menu-btn .icon.menu-icon {
         text-align: center;
         margin: 0;
         padding: 5px;
+        visibility: hidden;
+        opacity: 0;
     }
     body.dark-mode header nav ul {
         background: var(--glass-dark);
@@ -501,6 +512,8 @@ header nav .menu-btn .icon.menu-icon {
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
     }
     header nav ul.active {
+        visibility: visible;
+        opacity: 1;
         left: 0;
     }
     header nav ul .h-btn {
@@ -534,5 +547,13 @@ header nav .menu-btn .icon.menu-icon {
 @media (max-width: 507px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 35px;
+    }
+}
+@media (max-width: 500px) {
+    .heading h2 {
+        font-size: 30px;
+    }
+    .heading p {
+        font-size: 13px;
     }
 }
