@@ -4,54 +4,73 @@ const menuBtn = document.querySelector(".menu-btn .menu-icon i"),
       body = document.body;
 
 // ----------------- Menu Toggle -----------------
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("bi-x");
-    navMenu.classList.toggle("active");
-});
+if(menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("bi-x");
+        navMenu.classList.toggle("active");
+    });
+}
 
 // ----------------- Dark Mode -----------------
+if (darkModeBtn) {
 
-// Function to enable dark mode
-function enableDarkMode() {
-    body.classList.add("dark-mode");
-    darkModeBtn.classList.remove("bi-moon");
-    darkModeBtn.classList.add("bi-sun");
-    localStorage.setItem("theme", "dark"); // save preference
-}
+    // Function to enable dark mode
+    function enableDarkMode(save = true) {
+        body.classList.add("dark-mode");
+        darkModeBtn.classList.remove("bi-moon");
+        darkModeBtn.classList.add("bi-sun");
 
-// Function to enable light mode
-function enableLightMode() {
-    body.classList.remove("dark-mode");
-    darkModeBtn.classList.remove("bi-sun");
-    darkModeBtn.classList.add("bi-moon");
-    localStorage.setItem("theme", "light"); // save preference
-}
-
-// ----------------- Detect previous theme -----------------
-const savedTheme = localStorage.getItem("theme");
-
-// Apply saved theme if available, else system preference
-if (savedTheme === "dark") {
-    enableDarkMode();
-} else if (savedTheme === "light") {
-    enableLightMode();
-} else {
-    // No saved preference, check system
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        enableDarkMode();
-    } else {
-        enableLightMode();
+        if (save) localStorage.setItem("theme", "dark");
     }
-}
 
-// ----------------- Toggle on button click -----------------
-darkModeBtn.addEventListener("click", () => {
-    if (body.classList.contains("dark-mode")) {
+    // Function to enable light mode
+    function enableLightMode(save = true) {
+        body.classList.remove("dark-mode");
+        darkModeBtn.classList.remove("bi-sun");
+        darkModeBtn.classList.add("bi-moon");
+
+        if (save) localStorage.setItem("theme", "light");
+    }
+
+    // ----------------- Detect Theme -----------------
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        enableDarkMode();
+    } else if (savedTheme === "light") {
         enableLightMode();
     } else {
-        enableDarkMode();
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        if (systemDark) {
+            enableDarkMode(false);
+        } else {
+            enableLightMode(false);
+        }
     }
-});
+
+    // ----------------- Listen for Device Theme Change -----------------
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    mediaQuery.addEventListener("change", (e) => {
+        if (!localStorage.getItem("theme")) {
+            if (e.matches) {
+                enableDarkMode(false);
+            } else {
+                enableLightMode(false);
+            }
+        }
+    });
+
+    // ----------------- Toggle on Button Click -----------------
+    darkModeBtn.addEventListener("click", () => {
+        if (body.classList.contains("dark-mode")) {
+            enableLightMode();
+        } else {
+            enableDarkMode();
+        }
+    });
+}
 
 // Hero Page Slider 
 

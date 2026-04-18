@@ -14,7 +14,8 @@
     --white: #fff;
     --dark-brown: #5D481A;
     --golden-brown: #9D7724;
-    --lighter-brown: #CE9928;
+    --light-brown: #CE9928;
+    --lighter-brown: #ffd90047;
     --black: #333;
     --dark: #000;
     --light-white: #f5f5f5;
@@ -30,18 +31,33 @@
 }
 body.dark-mode {
     background: var(--light-white);
-    --white: #000;
-    --grey: #777;
-    --black: #fff;;
-    --light-white: #333;
     --dark: #fff;
+    --white: #000;
+    /* --grey: #777; */
+    --grey: #f5f5f59a;
+    --black: #f5f5f5;
+    --light-white: #333;
     --shadow: rgba(255, 255, 255, 0.2);
 }
 section {
     /* padding: 70px 0; */
     padding: 50px 20px 70px;
 }
-
+.heading {
+    margin: 20px 0;
+    text-align: center;
+}
+.heading h2 {
+    font-size: 40px;
+    color: var(--dark);
+}
+.heading p {
+    font-size: 15px;
+    color: var(--grey);
+}
+body.dark .heading p {
+    /* color: #f5f5f536; */
+}
 header {
     position: sticky;
     top: 0;
@@ -125,7 +141,7 @@ header nav .h-btn a::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--lighter-brown);
+    background: var(--light-brown);
     border-radius: 10px;
     transform: scaleX(0);
     transition: all 0.5s ease;
@@ -290,9 +306,157 @@ header nav .menu-btn .icon.menu-icon {
     font-size: 16px;
     color: #ffffffad;
 }
+#digitalGrowth .dg-box {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 3px var(--shadow);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#digitalGrowth .row {
+    margin-top: 50px;
+}
+#digitalGrowth .dg-box .icon i {
+    font-size: 40px;
+    color: var(--black);
+    padding: 10px 0;
+}
+#digitalGrowth .dg-box h2 {
+    color: var(--dark);
+    font-size: 20px;
+    padding: 10px 0;
+}
+#digitalGrowth .dg-box p {
+    color: var(--grey);
+    font-size: 15px;
+}
+#coreServices .core-box {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+}
+#coreServices .row {
+    padding-top: 50px;
+}
+#coreServices .core-box .img-cont {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#coreServices .core-box .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#coreServices .core-box .img-cont .img-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+#coreServices .core-box .img-cont .img-head h2 {
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    color: #fff;
+    font-size: 25px;
+}
+#coreServices .core-box .core-content {
+    margin: 20px 0;
+    padding: 10px;
+}
+#coreServices .core-box .core-content p {
+    color: var(--grey);
+    font-size: 15px;
+}
+#coreServices .core-box .core-content a {
+     display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 15px 8px;
+    color: var(--black);
+    font-size: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#coreServices .core-box .core-content a i {
+    font-size: 20px;
+    line-height: 1;
+}
+#coreServices .core-box .core-content a:hover {
+    color: #fff;
+    background: var(--golden-brown);
+}
+#coreServices .core-box:hover {
+    box-shadow: 0 5px 5px var(--shadow);
+}
+#coreServices .row .exp-serv {
+    display: inline-block;
+    padding: 8px 15px 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--light-brown);
+    cursor: pointer;
+    transition-property: background;
+    transition: 0.5s ease-in-out;
+}
+#coreServices .row .exp-serv:hover {
+    background: var(--dark-brown);
+}
+#whyP .row {
+    padding-top: 50px;
+}
+#whyP .whyp-box {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--lighter-brown);
+    transition: 0.8s ease-in-out;
+}
+#whyP .whyp-box:hover {
+    box-shadow: 0 0 10px var(--shadow);
+}
+#whyP .whyp-box .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--lighter-brown);
+}
+#whyP .whyp-box .icon i {
+    font-size: 25px;
+    color: var(--black);
+}
+#whyP .whyp-box .content h2 {
+    font-size: 20px;
+    color: var(--dark);
+}
+#whyP .whyp-box .content p {
+    color: var(--grey);
+    font-size: 15px;
+}
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 45px;
+    }
+}
+@media (max-width: 992px) {
+    #digitalGrowth .dg-box {
+        height: auto;
     }
 }
 @media (max-width: 990px) {
