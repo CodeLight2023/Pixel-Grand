@@ -37,6 +37,7 @@ body.dark-mode {
     --grey: #f5f5f59a;
     --black: #f5f5f5;
     --light-white: #333;
+    --navy: #7DD3FC;
     --shadow: rgba(255, 255, 255, 0.2);
 }
 section {
@@ -486,6 +487,41 @@ header nav .menu-btn .icon.menu-icon {
 #homeExtra .h-extraB .e-btn a:hover {
     background: var(--light-brown);
     color: #fff;
+}
+#spotlight .spotlight-box .top {
+    display: inline-block;
+    padding: 10px 15px 4px;
+    background: linear-gradient(to right, var(--light-brown), var(--navy));
+    border-radius: 20px;
+    margin: 10px 0;
+}
+#spotlight .spotlight-box .top h5 {
+    color: #fff;
+    font-size: 15px;
+}
+#spotlight .spotlight-box .content {
+    margin: 10px 0;
+}
+#spotlight .spotlight-box .content h2 {
+    font-size: 30px;
+    color: var(--navy);
+    font-weight: 600;
+    padding: 5px 0;
+}
+#spotlight .spotlight-box .content p {
+    color: var(--black);
+    font-size: 18px;
+    padding: 5px 0;
+}
+#spotlight .spotlight-box .content li {
+    font-size: 18px;
+    color: var(--grey);
+    margin: 10px 0;
+}
+#spotlight .spotlight-box .content li i {
+    font-size: 20px;
+    color: var(--navy);
+    padding: 0 10px;
 }
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
