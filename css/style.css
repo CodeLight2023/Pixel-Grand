@@ -499,9 +499,6 @@ header nav .menu-btn .icon.menu-icon {
     color: #fff;
     font-size: 15px;
 }
-#spotlight .spotlight-box .content {
-    margin: 10px 0;
-}
 #spotlight .spotlight-box .content h2 {
     font-size: 30px;
     color: var(--navy);
@@ -522,6 +519,26 @@ header nav .menu-btn .icon.menu-icon {
     font-size: 20px;
     color: var(--navy);
     padding: 0 10px;
+}
+#spotlight .spotlight-box .spotlight-btn a {
+    display: inline-block;
+    padding: 8px 15px 11px;
+    background: transparent;
+    border: 1px solid var(--grey)!important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--black);
+    margin: 10px 0;
+}
+#spotlight .spotlight-box .spotlight-btn a i {
+    font-size: 17px;
+    padding: 0 5px;
+}
+#spotlight .spotlight-box .spotlight-btn a:hover {
+    background: var(--dark-brown);
+    color: #fff;
+    box-shadow: 0 0 5px var(--shadow);
 }
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
