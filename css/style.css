@@ -668,7 +668,6 @@ header nav .menu-btn .icon.menu-icon {
 #about .btn a:hover i {
     transform: translateX(10px);
 }
-
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 45px;
