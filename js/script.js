@@ -151,6 +151,7 @@ const swiper = new Swiper(".testimonialSwiper", {
         }
     }
 });
+
 // Footer Year
 const year = document.querySelector('.year');
 if(year) {
