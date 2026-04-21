@@ -538,7 +538,69 @@ header nav .menu-btn .icon.menu-icon {
 #spotlight .spotlight-box .spotlight-btn a:hover {
     background: var(--dark-brown);
     color: #fff;
-    box-shadow: 0 0 5px var(--shadow);
+    box-shadow: 0 0 5px var(--shadow)!important;
+}
+#spotlight .spotlight-ic {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: red;
+    border-radius: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+#spotlight .spotlight-ic .img-cont {
+    width: 100%;
+    height: 100%;
+}
+#spotlight .spotlight-ic .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#spotlight .spotlight-ic .ic-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.2);
+}
+#spotlight .spotlight-ic .ic-content .ic-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+#spotlight .spotlight-ic .ic-content .ic-box .content {
+    display: inline-block;
+    padding: 13px 14px 5px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)!important;
+    text-align: center;
+}
+#spotlight .spotlight-ic .ic-content .ic-box .content.top {
+    position: absolute;
+    top: -10%;
+    right: -8%;
+}
+#spotlight .spotlight-ic .ic-content .ic-box .content.bottom {
+    position: absolute;
+    bottom: -10%;
+    left: -8%;
+}
+#spotlight .spotlight-ic .ic-content .ic-box .content h2 {
+    color: var(--navy);
+    font-size: 25px;
+    font-weight: 800px;
+}
+#spotlight .spotlight-ic .ic-content .ic-box .content p {
+    font-size: 13px;
+    color: #777;
 }
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
@@ -564,6 +626,12 @@ header nav .menu-btn .icon.menu-icon {
     }
     #home .container-fluid .col-12 .home-stats p {
         font-size: 16px;
+    }
+    #spotlight .spotlight-ic {
+        height: 500px;
+    }
+    #spotlight .spotlight-ic .ic-content {
+        padding: 50px;
     }
 }
 @media (max-width: 956px) {
