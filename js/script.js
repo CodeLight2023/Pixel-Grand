@@ -151,3 +151,9 @@ const swiper = new Swiper(".testimonialSwiper", {
         }
     }
 });
+// Footer Year
+const year = document.querySelector('.year');
+if(year) {
+    const currentYear = new Date().getFullYear()
+    year.textContent = currentYear;
+}
