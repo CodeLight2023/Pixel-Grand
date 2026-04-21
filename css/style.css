@@ -602,6 +602,51 @@ header nav .menu-btn .icon.menu-icon {
     font-size: 13px;
     color: #777;
 }
+                /* =========== ABOUT ================*/
+#about {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+#about h2 {
+    font-size: 70px;
+    color: var(--navy);
+    font-weight: 800;
+}
+#about h2 span {
+    color: var(--golden-brown);
+}
+#about p {
+    color: var(--grey);
+    font-size: 20px;
+    padding: 20px 0;
+}
+#about .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+}
+#about .icon .cont {
+    background: red;
+}
+#about .icon .cont i {
+    font-size: 30px;
+    color: var(--navy);
+    text-align: center;
+}
+#about .icon .cont h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#about .icon .cont p {
+    padding: 0;
+    margin: 0;
+    color: var(--grey);
+    font-size: 15px;
+}
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 45px;
