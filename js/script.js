@@ -120,3 +120,34 @@ const observer = new IntersectionObserver((entries) => {
 counters.forEach(counter => {
     observer.observe(counter);
 });
+
+// Testimonial
+
+const swiper = new Swiper(".testimonialSwiper", {
+    loop: true,
+    spaceBetween: 25,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            centeredSlides: true,
+        },
+        768: {
+            slidesPerView: 2,
+            centeredSlides: false,
+        },
+        992: {
+            slidesPerView: 3,
+            centeredSlides: false,
+        }
+    }
+});

@@ -603,6 +603,8 @@ header nav .menu-btn .icon.menu-icon {
     color: #777;
 }
 #testimonial .testimonial-box {
+    width: 100%;
+    height: 340px;
     padding: 15px;
     box-shadow: 0 5px 10px var(--shadow);
     background: var(--white);
@@ -624,6 +626,7 @@ header nav .menu-btn .icon.menu-icon {
 #testimonial .testimonial-box .testimony p {
     color: var(--grey);
     font-size: 15px;
+    line-height: 1.6;
 }
 #testimonial .testimonial-box hr {
     color: var(--grey);
@@ -641,6 +644,38 @@ header nav .menu-btn .icon.menu-icon {
 #testimonial .testimonial-box .stars i {
     font-size: 20px;
     color: gold;
+}
+#testimonial .testimonialSwiper {
+    padding-top: 40px;
+    padding-bottom: 60px; /* gives space for pagination */
+    position: relative;
+}
+/* force pagination OUTSIDE card area */
+#testimonial .swiper-pagination {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+/* optional: better look */
+#testimonial .swiper-pagination-bullet {
+    background: var(--navy);
+    opacity: 0.3;
+}
+
+#testimonial .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+/* Swiper FIX (VERY IMPORTANT) */
+.swiper {
+    padding: 40px 10px;
+}
+
+/* Remove scaling (this was breaking layout) */
+.swiper-slide {
+    height: auto;
+    display: flex;
 }
 /* =========== ABOUT ================*/
 #about {
@@ -801,6 +836,11 @@ header nav .menu-btn .icon.menu-icon {
     }
     #home .container-fluid .col-12 .b-t {
         font-size: 18px;
+    }
+}
+@media (max-width: 765px) {
+    #testimonial .testimonial-box {
+        height: auto;
     }
 }
 @media (max-width: 665px) {
