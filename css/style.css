@@ -852,6 +852,124 @@ header nav .menu-btn .icon.menu-icon {
     color: var(--navy);
     font-weight: bold;
 }
+
+
+/* ====== Service Page ============*/
+#serviceHeroPage .servHeroContent {
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#serviceHeroPage .servHeroContent h2 {
+    font-size: 70px;
+    color: var(--navy);
+    font-weight: 700;
+}
+#serviceHeroPage .servHeroContent h2 span {
+    color: var(--light-brown);
+}
+#serviceHeroPage .servHeroContent p {
+    color: var(--grey);
+    font-size: 18px;
+    padding: 10px 0;
+}
+#serviceHeroPage .servHeroContent .serv-info {
+    margin: 10px auto;
+}
+#serviceHeroPage .servHeroContent .serv-info .icon {
+    margin-bottom: 20px;
+}
+#serviceHeroPage .servHeroContent .serv-info .icon i {
+    font-size: 30px;
+    color: var(--navy);
+}
+#serviceHeroPage .servHeroContent .serv-info .content h3 {
+    color: var(--dark);
+    font-size: 18px;
+}
+#serviceHeroPage .servHeroContent .serv-info .content h6 {
+    color: var(--grey);
+    font-size: 13px;
+}
+#serviceHeroPage .servHeroContent .servH-btn a {
+    display: inline-block;
+    padding: 10px 15px 12px;
+    background: var(--light-brown);
+    color: var(--white);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#serviceHeroPage .servHeroContent .servH-btn a i {
+    padding-left: 8px;
+    transition: 0.5s ease-in-out;
+}
+#serviceHeroPage .servHeroContent .servH-btn a:hover i {
+    animation: moveLeft 0.8s linear;
+}
+#services .serv-box .serv-head {
+    display: flex;
+    gap: 8px;
+}
+#services .serv-box .serv-head .icon {
+    width: 50px;
+    height: 50px;
+    background: var(--lighter-brown);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .serv-box .serv-head .icon i {
+    font-size: 25px;
+    color: var(--black);
+}
+#services .serv-box .serv-head h2 {
+    font-size: 30px;
+    color: var(--dark);
+    padding: 5px 10px;
+    font-weight: 700;
+}
+#services .serv-box .content {
+    margin: 10px 0;
+}
+#services .serv-box .content p {
+    color: var(--grey);
+    font-size: 18px;
+    padding: 5px 0;
+}
+#services .serv-box .content .serv-list {
+    margin: 5px 0;
+}
+#services .serv-box .content .serv-list .list-item {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    color: var(--black);
+    font-size: 18px;
+}
+#services .serv-box .content .serv-list .list-item i {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1;
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
 /* Footer */
 footer {
     padding: 60px 10px 10px;
@@ -950,54 +1068,6 @@ footer .ptc a {
 footer .ptc a:hover {
     color: var(--light-brown);
 }
-@media (max-width: 843px) {
-    #about h2 {
-        font-size: 60px;
-    }
-    #about p {
-        font-size: 16px;
-    }
-}
-@media (max-width: 767px) {
-    #about h2 {
-        font-size: 50px;
-    }
-    #about p {
-        font-size: 13px;
-    }
-}
-@media (max-width: 559px) {
-    #about h2 {
-        font-size: 50px;
-    }
-    #about p {
-        font-size: 13px;
-    }
-}
-@media (max-width: 517px) {
-    #about h2 {
-        font-size: 40px;
-    }
-    #about p {
-        font-size: 13px;
-    }
-}
-@media (max-width: 445px) {
-    #about h2 {
-        font-size: 30px;
-    }
-    #about p {
-        font-size: 13px;
-    }
-}
-@media (max-width: 369px) {
-    #about h2 {
-        font-size: 30px;
-    }
-    #about p {
-        font-size: 13px;
-    }
-}
 @media (max-width: 1052px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 45px;
@@ -1093,6 +1163,30 @@ footer .ptc a:hover {
         font-size: 18px;
     }
 }
+@media (max-width: 843px) {
+    #about h2 {
+        font-size: 60px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    #about h2 {
+        font-size: 50px;
+    }
+    #about p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+    #serviceHeroPage .servHeroContent {
+        width: 100%;
+    }
+    #serviceHeroPage .servHeroContent h2 {
+        font-size: 50px;
+    }
+}
 @media (max-width: 765px) {
     #testimonial .testimonial-box {
         height: auto;
@@ -1101,6 +1195,28 @@ footer .ptc a:hover {
 @media (max-width: 665px) {
     #home .container-fluid .col-12 .b-h {
         font-size: 35px;
+    }
+}
+@media (max-width: 559px) {
+    #about h2 {
+        font-size: 50px;
+    }
+    #about p {
+        font-size: 13px;
+    }
+    #serviceHeroPage .servHeroContent h2 {
+        font-size: 40px;
+    }
+    #serviceHeroPage .servHeroContent p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 517px) {
+    #about h2 {
+        font-size: 40px;
+    }
+    #about p {
+        font-size: 13px;
     }
 }
 @media (max-width: 507px) {
@@ -1113,6 +1229,22 @@ footer .ptc a:hover {
         font-size: 30px;
     }
     .heading p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 445px) {
+    #about h2 {
+        font-size: 30px;
+    }
+    #about p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 369px) {
+    #about h2 {
+        font-size: 30px;
+    }
+    #about p {
         font-size: 13px;
     }
 }
