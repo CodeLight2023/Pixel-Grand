@@ -746,6 +746,7 @@ header nav .menu-btn .icon.menu-icon {
 #about .btn a:hover i {
     transform: translateX(10px);
 }
+/* =========== MISSION ================*/
 #mission {
     width: 100%;
     height: auto;
@@ -819,6 +820,7 @@ header nav .menu-btn .icon.menu-icon {
     text-align: left;
     font-size: 14px;
 }
+ /* =========== GOALS ================*/
 #goals {
     width: 100%;
     height: auto;
@@ -832,28 +834,141 @@ header nav .menu-btn .icon.menu-icon {
 #goals p {
     font-size: 20px;
 }
+#goals .container {
+    margin-top: 5%;
+}
 #goals .box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 50px;
+    gap: 30px;
     box-shadow: 0 0 5px var(--shadow);
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 0;
 }
 #goals .box h5 {
+    color: var(--dark);
     font-size: 15px;
 }
 #goals .box p {
-    font-size: 15px;
+    font-size: 13px;
 }
 #goals .box .icon i {
-    font-size: 35px;
+    font-size: 25px;
+    color: var(--navy);
+    font-weight: bold;
+} 
+#goals .abt-cont {
+    gap: 12%;
+    margin-top: 20px;
+}
+#goals .abt-cont h2 {
+    color: var(--navy);
+    font-size: 25px;
+}
+#goals .abt-cont p {
+    font-size: 15px;
+    color: var(--dark);
+}
+#industry {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+#industry h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+#industry p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+#industry .btn a {
+    display: inline-block;
+    padding: 10px 17px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgba(248, 205, 49);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+#industry .container .head h5 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: var(--light-white);
+    background: linear-gradient(to right, rgb(157, 119, 36), rgb(157, 119, 36), rgb(0, 0, 128));
+}
+#industry .container .head h2 {
+    font-size: 37px;
+    margin-top: 10px;
+}
+#industry .container .head p {
+    font-size: 18px;
+}
+#industry .container .box {
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 0 2px var(--shadow);
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+#industry .container .box h5 {
+    color: var(--dark);
+    font-size: 18px;
+}
+#industry .container .box p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+#industry .container .box .icon i {
+    font-size: 25px;
     color: var(--navy);
     font-weight: bold;
 }
-
-
+#industry .container .img {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--shadow);
+    margin-top: 20%;
+}
+#industry .container .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#industry .container .img .img-cont {
+    position: relative;
+}
+#industry .container .img .img-cont h2 {
+    position: absolute;
+    left: 27%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+}
+#industry .container .img .img-cont p {
+    position: absolute;
+    left: 2.5%;
+    bottom: 5%;
+    color: #fff;
+    font-size: 13px;
+}
+#industry .container .img .img-text h2 {
+    font-size: 18px;
+    color: var(--navy);
+    font-weight: 700;
+}
+#industry .container .img .img-text p {
+    font-size: 14px;
+    margin-top: -10px;
+}
 /* ====== Service Page ============*/
 #serviceHeroPage .servHeroContent {
     width: 800px;
@@ -969,6 +1084,81 @@ header nav .menu-btn .icon.menu-icon {
     100% {
         transform: translate(0px);
     }
+} 
+/* =========== SERVICES ================*/
+#serv {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+#serv h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+#serv p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+#serv .container {
+    margin-top: 5%;
+}
+#serv .content {
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#serv .content .icon-1 i {
+    padding: 13px 15px;
+    font-size: 30px;
+    color: #000;
+    border-radius: 15px;
+    background: rgba(211, 230, 254);
+}
+#serv .content .icon-2 i {
+    color: #000;
+    padding: 13px 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    background: rgba(210, 251, 224);
+}
+#serv .content .icon-3 i {
+    color: #000;
+    padding: 13px 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    background: rgba(240, 227, 255);
+}
+#serv .content .icon-4 i {
+    padding: 13px 15px;
+    color: #000;
+    font-size: 30px;
+    border-radius: 15px;
+    background: rgb(250, 249, 249);
+}
+#serv .content .icon-5 i {
+    padding: 13px 15px;
+    font-size: 30px;
+    color: #000;
+    border-radius: 15px;
+    background: rgba(255, 220, 220);
+}
+#serv .content .icon-6 i {
+    padding: 13px 15px;
+    color: #000;
+    font-size: 30px;
+    border-radius: 15px;
+    background: rgba(252, 224, 240);
+}
+#serv .content h5 {
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: 600;
+    margin: 25px 0;
+}
+#serv .content p {
+    font-size: 14px;
+    margin-top: -15px;
 }
 /* Footer */
 footer {
