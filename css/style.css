@@ -1116,6 +1116,9 @@ header nav .menu-btn .icon.menu-icon {
         transform: translate(0px);
     }
 } 
+#services .serv-box {
+    margin:  50px 0;
+}
 #services .serv-box .serv-head {
     display: flex;
     gap: 8px;
@@ -1170,6 +1173,7 @@ header nav .menu-btn .icon.menu-icon {
     height: 400px;
     border-radius: 5px;
     overflow: hidden;
+    margin:  50px 0;
     transition: 0.8s ease-in-out;
 }
 #services .serv-img .img-cont {
