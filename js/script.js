@@ -77,49 +77,54 @@ if (darkModeBtn) {
 const slides = document.querySelectorAll(".bg");
 let index = 0;
 
-setInterval(() => {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-}, 6000);
+if(slides) {
+    setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }, 6000);
+}
 
 
 // Counter stuff in Stats 
 
 const counters = document.querySelectorAll(".counter");
 
-const startCounting = (counter) => {
-    const target = +counter.getAttribute("data-target");
-    let count = 0;
+if(counters) {
+    const startCounting = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
 
-    const speed = target / 100;
+        const speed = target / 100;
 
-    const update = () => {
-        count += speed;
+        const update = () => {
+            count += speed;
 
-        if (count < target) {
-            counter.innerText = Math.floor(count).toLocaleString();
-            requestAnimationFrame(update);
-        } else {
-            counter.innerText = target.toLocaleString();
-        }
+            if (count < target) {
+                counter.innerText = Math.floor(count).toLocaleString();
+                requestAnimationFrame(update);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+
+        update();
     };
 
-    update();
-};
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounting(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            startCounting(entry.target);
-            observer.unobserve(entry.target);
-        }
+    counters.forEach(counter => {
+        observer.observe(counter);
     });
-}, { threshold: 0.5 });
+}
 
-counters.forEach(counter => {
-    observer.observe(counter);
-});
 
 // Testimonial
 
