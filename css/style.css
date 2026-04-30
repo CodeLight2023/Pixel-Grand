@@ -1494,7 +1494,8 @@ header nav .menu-btn .icon.menu-icon {
     text-align: center;
     font-size: 14px;
     color: var(--navy);
-    margin: 0 0 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 #article .art-box .link a:hover {
     background: var(--light-brown);
