@@ -2369,6 +2369,9 @@ header nav .menu-btn .icon.menu-icon {
     background: var(--light-brown);
     color: #fff;
 }
+#portfolio .portfolio-card .p-btn a i {
+    padding-left: 10px;
+}
 /* ====== Contact Page ============*/
 #contactHeroPage {
     background: var(--lighter-brown);
