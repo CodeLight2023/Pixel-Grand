@@ -157,6 +157,30 @@ const swiper = new Swiper(".testimonialSwiper", {
     }
 });
 
+const filterButtons = document.querySelectorAll(".filter-btn");
+const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+filterButtons.forEach(btn => {
+btn.addEventListener("click", () => {
+
+    // Remove active class
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filter = btn.getAttribute("data-filter");
+
+    portfolioItems.forEach(item => {
+    const category = item.getAttribute("data-category");
+
+    if (filter === "all" || filter === category) {
+        item.style.display = "block";
+    } else {
+        item.style.display = "none";
+    }
+    });
+});
+});
+
 // Footer Year
 const year = document.querySelector('.year');
 if(year) {

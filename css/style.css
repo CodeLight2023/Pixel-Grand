@@ -2170,7 +2170,205 @@ header nav .menu-btn .icon.menu-icon {
     color: var(--grey);
     font-size: 15px;
 }
-
+/* ====== Portfolio Page ============*/
+#portfolioHeroPage {
+    background: var(--lighter-brown);
+}
+#portfolioHeroPage .portHeroContent {
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#portfolioHeroPage .portHeroContent h2 {
+    font-size: 70px;
+    color: var(--navy);
+    font-weight: 700;
+}
+#portfolioHeroPage .portHeroContent h2 span {
+    color: var(--light-brown);
+}
+#portfolioHeroPage .portHeroContent p {
+    color: var(--grey);
+    font-size: 18px;
+    padding: 10px 0;
+}
+#portfolioHeroPage .portHeroContent .port-info {
+    margin: 10px auto;
+}
+#portfolioHeroPage .portHeroContent .port-info .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--light-brown);
+    box-shadow: 0 0 5px var(--shadow);
+    margin: 20px auto;
+    padding: 8px 0;
+}
+#portfolioHeroPage .portHeroContent .port-info .icon i {
+    font-size: 30px;
+    color: #fff;
+}
+#portfolioHeroPage .portHeroContent .port-info .content h3 {
+    color: var(--dark);
+    font-size: 25px;
+}
+#portfolioHeroPage .portHeroContent .port-info .content h6 {
+    color: var(--grey);
+    font-size: 13px;
+}
+#portfolioHeroPage .portHeroContent .portH-btn a {
+    display: inline-block;
+    padding: 10px 15px 12px;
+    background: linear-gradient(to right, var(--light-brown), var(--golden-brown));
+    color: var(--white);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#portfolioHeroPage .portHeroContent .portH-btn a i {
+    padding-left: 8px;
+    transition: 0.5s ease-in-out;
+}
+#portfolioHeroPage .portHeroContent .portH-btn a:hover i {
+    animation: moveLeft 0.8s linear;
+}
+/* Filter buttons */
+#portfolio .filter-btn {
+    border-radius: 50px;
+    margin: 5px;
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+}
+#portfolio .filter-btn.active,
+#portfolio .filter-btn:hover {
+    background: #ffc107;
+    color: #fff;
+    border-color: #ffc107;
+}
+#portfolio .portfolio-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--shadow);
+    margin: 20px 0;
+    overflow: hidden;
+}
+#portfolio .portfolio-card .top {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#portfolio .portfolio-card .img-cont {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#portfolio .portfolio-card .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#portfolio .portfolio-card .img-cont .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#portfolio .portfolio-card .img-cont .overlay .content {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+#portfolio .portfolio-card .img-cont .overlay .content h2 {
+    font-size: 20px;
+    color: #fff;
+    padding: 1px 0;
+}
+#portfolio .portfolio-card .img-cont .overlay .content h4 {
+    font-size: 15px;
+    color: var(--light-brown);
+    padding: 1px 0;
+}
+#portfolio .portfolio-card .portfolio-content {
+    margin: 10px 0;
+    padding: 10px;
+}
+#portfolio .portfolio-card .portfolio-content .content h3 {
+    font-size: 16px;
+    color: var(--navy);
+}
+#portfolio .portfolio-card .portfolio-content .content p {
+    font-size: 15px;
+    color: var(--grey);
+}
+/* #portfolio .portfolio-card .port-bottom {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+} */
+#portfolio .portfolio-card .port-abt {
+    padding: 10px;
+}
+#portfolio .portfolio-card .port-abt .abt-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: -10px;
+}
+#portfolio .portfolio-card .port-abt .abt-cont .ic-t span {
+    font-size: 14px;
+    color: var(--grey);
+}
+#portfolio .portfolio-card .port-abt .abt-cont .ic-t i {
+    font-size: 14px;
+    color: var(--grey);
+}
+#portfolio .portfolio-card .port-abt .abt-cont .ic-info p {
+    font-size: 14px;
+    color: var(--light-brown);
+    font-weight: 600;
+}
+#portfolio .portfolio-card .lit-inf {
+    padding: 10px;
+}
+#portfolio .portfolio-card .lit-inf span {
+    display: inline-block;
+    padding: 1px 7px 3px;
+    background: #77777752;
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0 3px;
+}
+#portfolio .portfolio-card .p-btn {
+    margin: 10px;
+}
+#portfolio .portfolio-card .p-btn a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 8px 15px 11px;
+    font-weight: 700;
+    background: transparent;
+    border: 1px solid var(--light-brown);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--black);
+}
+#portfolio .portfolio-card .p-btn a:hover {
+    background: var(--light-brown);
+    color: #fff;
+}
 /* ====== Contact Page ============*/
 #contactHeroPage {
     background: var(--lighter-brown);
@@ -2558,6 +2756,11 @@ footer .ptc a:hover {
         height: auto;
     }
 }
+@media (min-width: 992px) {
+    #portfolio .portfolio-card {
+        height: 850px;
+    }
+}
 @media (max-width: 992px) {
     #digitalGrowth .dg-box {
         height: auto;
@@ -2661,6 +2864,12 @@ footer .ptc a:hover {
         width: 100%;
     }
     #serviceHeroPage .servHeroContent h2 {
+        font-size: 50px;
+    }
+    #portfolioHeroPage .portHeroContent {
+        width: 100%;
+    }
+    #portfolioHeroPage .portHeroContent h2 {
         font-size: 50px;
     }
     #contactHeroPage .conHeroContent {

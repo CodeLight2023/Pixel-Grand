@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo3.png">
+    <!-- Font Family (Poppins and DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Cdn Installation -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Cdn Installation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icon Installation-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Cdn Installation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Swiper Cdn Installation
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" /> -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Pixel Grand Tech Hub</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">
+                <div class="logo">
+                    <img src="img/Logo3.png" alt="Pixel Grand Logo">
+                </div>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="h-btn">
+                    <a href="contact.html">Get Started</a>
+                </div>
+            </ul>
+            <div class="menu-btn">
+                <div class="h-btn">
+                    <a href="contact.html">Get Started</a>
+                </div>
+                <div class="icon menu-icon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="icon mode-toggle">
+                    <i class="bi bi-moon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="portfolioHeroPage">
+        <div class="container text-center">
+            <div class="col-12 text-center">
+                <div class="portHeroContent">
+                    <h2>Our <span>Portfolio</span></h2>
+                    <p>Discover how we've transformed brands, built digital experiences, and delivered measurable results for businesses across industries. Every project tells a story of innovation, creativity, and strategic thinking.</p>
+
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="port-info">
+                                <div class="icon">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                                <div class="content">
+                                    <h3>50+</h3>
+                                    <h6>Projects Completed</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="port-info">
+                                <div class="icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <div class="content">
+                                    <h3>98%</h3>
+                                    <h6>Client Satisfaction</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="port-info">
+                                <div class="icon">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <div class="content">
+                                    <h3>25+</h3>
+                                    <h6>Industries Served</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portH-btn mt-3">
+                        <a href="#">View Our Work <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="filter-buttons mb-4 text-center">
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="branding">Branding</button>
+                <button class="btn filter-btn" data-filter="websites">Websites</button>
+                <button class="btn filter-btn" data-filter="marketing">Marketing</button>
+                <button class="btn filter-btn" data-filter="events">Events</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4 portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img20.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Branding</span>
+                                </div>
+                                <div class="content">
+                                    <h2>TechCorp Brand Revolution</h2>
+                                    <h4>TechCorp Solutions</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>TechCorp needed a complete brand identity overhaul to position themselves as industry leaders and attract enterprise clients.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We developed a comprehensive brand strategy including logo design, visual identity system, brand guidelines, and marketing collateral that reflected their innovation and expertise.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>The new brand identity increased client inquiries by 300% and helped secure $2M in new enterprise contracts within 6 months.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Increase in Inquiries</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>300%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>New Contracts</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>$2M</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Timeline</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>6 months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>Logo Design</span>
+                                <span>Brand Strategy</span>
+                                <span>Visual Identity</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="websites">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img21.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Websites</span>
+                                </div>
+                                <div class="content">
+                                    <h2>E-Commerce Platform Launch</h2>
+                                    <h4>Fashion Forward</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>Fashion Forward needed a modern e-commerce platform that could handle high traffic during sales events and provide seamless user experience.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We built a custom responsive e-commerce website with advanced filtering, wishlist functionality, secure payment integration, and optimized checkout flow.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>The new platform increased online sales by 250% and reduced cart abandonment by 40%, generating $500K additional revenue in the first quarter.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Sales Increase</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>250%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>Cart Abandonment</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>-40%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Revenue Generated</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>$500K</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>E-commerce</span>
+                                <span>UI/UX Design</span>
+                                <span>Payment Integration</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="marketing">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img22.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Marketing</span>
+                                </div>
+                                <div class="content">
+                                    <h2>Digital Marketing Transformation</h2>
+                                    <h4>HealthWell Clinic</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>HealthWell needed to increase patient bookings and establish thought leadership in the competitive healthcare market.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We implemented a comprehensive digital marketing strategy including SEO optimization, content marketing, social media campaigns, and Google Ads management.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>Patient bookings increased by 180% and website traffic grew by 320% within 4 months, establishing them as a leading healthcare provider in their region.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Patient Bookings</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>+180%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>Website Traffic</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>+320%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Campaign Duration</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>4 Months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>SEO</span>
+                                <span>Content Managing</span>
+                                <span>Google Ads</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="events">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img23.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Events</span>
+                                </div>
+                                <div class="content">
+                                    <h2>Corporate Event Excellence</h2>
+                                    <h4>Innovation Summit 2024</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>The annual Innovation Summit needed comprehensive event coverage and digital marketing to increase attendance and engagement.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We provided event photography, videography, live streaming, social media coverage, and created promotional materials that captured the essence of innovation.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>Event attendance increased by 150% compared to previous year, with social media engagement reaching 2M impressions and generating significant industry buzz.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Attendance Increase</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>150%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>Social Impressions</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>2M</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Event Duration</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>3 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>Event Photography</span>
+                                <span>Live Streaming</span>
+                                <span>Social Media</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="websites">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img24.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Websites</span>
+                                </div>
+                                <div class="content">
+                                    <h2>Mobile App Innovation</h2>
+                                    <h4>FitLife Wellness</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>FitLife needed a mobile app to complement their fitness programs and provide personalized workout tracking for their members.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We designed and developed a cross-platform mobile app with workout tracking, nutrition planning, progress analytics, and social features to keep users engaged.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>The app achieved 10K downloads in the first month and increased member retention by 65%, with users spending an average of 45 minutes daily in the app.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Downloads (Month 1)</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>10k+</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>Member Retention</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>+65%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Daily Usage</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>45 Mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>Mobile App</span>
+                                <span>UI/UX Design</span>
+                                <span>Cross-platform</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="img-cont">
+                            <img src="img/img25.jpg" alt="Branding" loading="lazy">
+                            <div class="overlay">
+                                <div class="top">
+                                    <span class="badge bg-warning">Branding</span>
+                                </div>
+                                <div class="content">
+                                    <h2>Restaurant Brand Makeover</h2>
+                                    <h4>Artisan Bistro</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="content">
+                                <h3>Challenge</h3>
+                                <p>Artisan Bistro needed to rebrand to attract a younger demographic while maintaining their reputation for quality cuisine.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Solution</h3>
+                                <p>We created a fresh visual identity, redesigned their menu, developed packaging solutions, and created a comprehensive brand experience that balanced modern appeal with culinary excellence.</p>
+                            </div>
+                            <div class="content">
+                                <h3>Results</h3>
+                                <p>The rebrand resulted in a 40% increase in millennial customers and 25% growth in overall revenue, with the new brand being featured in local lifestyle magazines.</p>
+                            </div>
+                        </div>
+                        <div class="port-bottom">
+                            <div class="port-abt">
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <span>Millennial Customers</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>+40%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-people"></i>
+                                        <span>Revenue Growth</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>+25%</p>
+                                    </div>
+                                </div>
+                                <div class="abt-cont">
+                                    <div class="ic-t">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>Project Timeline</span>
+                                    </div>
+                                    <div class="ic-info">
+                                        <p>3 Months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lit-inf">
+                                <span>Rebranding</span>
+                                <span>Menu Design</span>
+                                <span>Packaging</span>
+                            </div>
+                            <div class="p-btn">
+                                <a href="#">View Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brand">
+        <div class="brand">
+            <div class="container-fluid">
+                <div class="head">
+                    <h2>Your Brand Deserves More Than<br> Presence — <span>It Deserves Influence</span></h2>
+                    <p>Ready to transform your digital presence and drive real results? Let's create<br> something extraordinary together.</p>
+                </div>
+                <div class="link">
+                    <a href="#" class="btn py-2 px-3">Start My Project&nbsp;&nbsp;<i class="bi bi-arrow-right-short"></i></a><a href="#"  class="btn py-2 px-3"><i class="bi bi-calendar4"></i>&nbsp;&nbsp;Get Consultation</a>
+                </div>
+                <div class="list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Call Us</h5>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Email</h5>
+                                <p>hello@pixelgrand.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Response Time</h5>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="company-info">
+                        <div class="company-logo">
+                            <img src="img/Logo3.png" alt="Pixel Grand" loading="lazy">
+                            <h2>Pixel Grand</h2>
+                        </div>
+                        <div class="info">
+                            <p>Your creative and technological growth partner. We help brands stand out in a noisy world through strategic digital solutions.</p>
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-head">
+                        <h2>Quick Link</h2>
+                    </div>
+                    <div class="quick-link">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-head">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="quick-link">
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Branding & Identity</a></li>
+                        <li><a href="#">Content Creation</a></li>
+                        <li><a href="#">Tech Innovation</a></li>
+                        <li><a href="#">Consultation</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-head">
+                        <h2>Get In Touch</h2>
+                    </div>
+                    <div class="c-info">
+                        <li><i class="bi bi-telephone"></i> +1 (555) 123-4567</li>
+                        <li><i class="bi bi-envelope"></i> hello@pixelgrand.com</li>
+                        <li><i class="bi bi-geo-alt"></i> 123 Digital Street, Tech City</li>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="last-cont">
+                    <div class="copyright">
+                        <p>© <span class="year"></span> PixelGrand Tech Hub. All rights reserved.</p>
+                    </div>
+                    <div class="ptc">
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                        <a href="">
+                            Terms Of Service
+                        </a>
+                        <a href="">
+                            Cookie Policy
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle Installation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS Bundle Installation -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS Bundle Installation
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS File -->
+    <script src="js/script.js"></script>    
+</body>
+</html>
