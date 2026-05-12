@@ -4,9 +4,13 @@
     <!-- Basic Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Force browsers not to cache the HTML page itself -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
     <!-- Primary SEO -->
-    <title>Contact Pixel Grand Tech Hub | Let’s Build Your Brand Together</title>
+    <title>Contact Pixel Grand Tech Hub | Let's Build Your Brand Together</title>
 
     <meta name="description"
         content="Pixel Grand Tech Hub provides professional digital marketing, content creation, web development, branding, CAC business registration, tech innovation, renovation services, event coverage, and business consultation solutions.">
@@ -18,35 +22,21 @@
     <meta name="robots" content="index, follow">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://pixelgrandtech.com/">
+    <link rel="canonical" href="https://pixelgrandtech.com/contact">
 
-    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-
-    <meta property="og:title"
-        content="Pixel Grand Tech Hub | Digital Marketing, Web Development & Business Solutions">
-
-    <meta property="og:description"
-        content="Helping brands grow through digital marketing, web development, branding, CAC registration, event coverage, renovation services, and innovative business solutions.">
-
-    <meta property="og:url" content="https://pixelgrandtech.com/">
-
-    <meta property="og:image"
-        content="https://pixelgrandtech.com/img/Logo3.png">
-
+    <meta property="og:title" content="Contact Pixel Grand Tech Hub | Let's Build Your Brand Together">
+    <meta property="og:description" content="Helping brands grow through digital marketing, web development, branding, CAC registration, event coverage, renovation services, and innovative business solutions.">
+    <meta property="og:url" content="https://pixelgrandtech.com/contact">
+    <meta property="og:image" content="https://pixelgrandtech.com/img/Logo3.png">
     <meta property="og:site_name" content="Pixel Grand Tech Hub">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title"
-        content="Pixel Grand Tech Hub | Digital Marketing, Web Development & Business Solutions">
-
-    <meta name="twitter:description"
-        content="Professional solutions in digital marketing, content creation, branding, website design, business support, and CAC registration services.">
-
-    <meta name="twitter:image"
-        content="https://pixelgrandtech.com/img/Logo3.png">
+    <meta name="twitter:title" content="Contact Pixel Grand Tech Hub | Let's Build Your Brand Together">
+    <meta name="twitter:description" content="Professional solutions in digital marketing, content creation, branding, website design, business support, and CAC registration services.">
+    <meta name="twitter:image" content="https://pixelgrandtech.com/img/Logo3.png">
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#000000">
@@ -57,37 +47,34 @@
     <!-- Font Family (Poppins and DM Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- AOS Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css?v=2.0">
 
-    <!-- Schema Markup (SEO BOOST) -->
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -108,20 +95,28 @@
         "Renovation Services",
         "Business Registration (CAC)"
       ],
-      "sameAs": [
-        "https://facebook.com/",
-        "https://instagram.com/",
-        "https://linkedin.com/",
-        "https://twitter.com/"
-      ],
       "contactPoint": {
         "@type": "ContactPoint",
+        "email": "info@pixelgrandtech.com",
         "contactType": "customer support",
         "areaServed": "Worldwide",
         "availableLanguage": ["English"]
       }
     }
     </script>
+
+    <!-- Honeypot: completely hidden from real users -->
+    <style>
+        .hnpt {
+            opacity: 0;
+            position: absolute;
+            top: 0; left: 0;
+            height: 0; width: 0;
+            z-index: -9999;
+            pointer-events: none;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div class="preloader">
@@ -143,7 +138,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <div class="h-btn">
                     <a href="contact.html">Get Started</a>
                 </div>
@@ -177,7 +172,7 @@
                                 </div>
                                 <div class="content">
                                     <h3>Call Us</h3>
-                                    <h6>+1 (555) 123-4567</h6>
+                                    <h6>+234 000 0000 000</h6>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +183,7 @@
                                 </div>
                                 <div class="content">
                                     <h3>Email Us</h3>
-                                    <h6>hello@pixelgrand.com</h6>
+                                    <h6>info@pixelgrandtech.com</h6>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +200,7 @@
                         </div>
                     </div>
                     <div class="conH-btn mt-3 wow fadeIn" data-wow-delay="0.7s">
-                        <a href="#">Get In Touch <i class="fa fa-arrow-right"></i></a>
+                        <a href="#contact-form">Get In Touch <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -225,41 +220,55 @@
                 <div class="top">
                     <h2>Contact Information</h2>
                 </div>
-                <form action="">
-                    <!-- Honeypot Field (Hidden From Users) -->
-                    <div style="display:none;">
-                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                
+
+                <form action="send_contact.php" method="POST" id="contactForm">
+
+                    <!-- ======================================================
+                         HONEYPOT FIELD — Invisible to humans, filled by bots.
+                         Name "website" is bait; real users never see or touch it.
+                         ====================================================== -->
+                    <div class="hnpt" aria-hidden="true">
+                        <label for="website">Website (do not fill)</label>
+                        <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" value="">
                     </div>
+
+                    <!-- Hidden timestamp: server uses this to catch instant (bot) submits -->
+                    <input type="hidden" name="form_loaded_at" id="form_loaded_at" value="">
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="box">
                                 <label for="fullName">Full Name <span>*</span></label>
-                                <input type="text" name="fullName" placeholder="Enter your full name" required>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="box">
                                 <label for="email">Email Address <span>*</span></label>
-                                <input type="email" name="email" placeholder="Enter your email address" required>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="box">
-                                <label for="mobileNumber">Phone Number <span>*</span></label>
-                                <input type="number" name="mobileNumber" placeholder="Enter your phone number" required>
+                                <label for="mobileNumber">Phone Number</label>
+                                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your phone number">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="box">
                                 <label for="services">Service Interested In <span>*</span></label>
-                                <select name="services" id="" required>
+                                <select name="services" id="services" required>
                                     <option value="" selected disabled>Select A Service</option>
-                                    <option value="Branding & Identity">Branding & Identity</option>
-                                    <option value="Content Creation">Content Creation</option>
                                     <option value="Digital Marketing">Digital Marketing</option>
-                                    <option value="General Consultation">General Consultation</option>
+                                    <option value="Content Creation & Engagement">Content Creation &amp; Engagement</option>
+                                    <option value="Web Development & Design">Web Development &amp; Design</option>
+                                    <option value="Branding & Identity">Branding &amp; Identity</option>
                                     <option value="Tech Innovation">Tech Innovation</option>
-                                    <option value="Web Development">Web Development</option>
+                                    <option value="Consultation & Business Support">Consultation &amp; Business Support</option>
+                                    <option value="Events & Coverage">Events &amp; Coverage</option>
+                                    <option value="PixelGrand Renovation Services">PixelGrand Renovation Services</option>
+                                    <option value="Business Registration (CAC)">Business Registration (CAC)</option>
                                     <option value="Multiple Services">Multiple Services</option>
                                     <option value="Other">Other</option>
                                 </select>
@@ -272,16 +281,23 @@
                             </div>
                         </div>
 
-                        <!-- Google reCAPTCHA -->
-                        <div class="col-12">
+                        <!-- Google reCAPTCHA v2 -->
+                        <div class="col-12" style="margin-bottom: 16px;">
                             <div class="g-recaptcha" data-sitekey="6LftOecsAAAAAJsmQ3gLI7bi-aiDGCt4NfNABobB"></div>
                         </div>
 
                         <div class="col-12">
-                            <button>Send Message <i class="fa fa-paper-plane"></i></button>
+                            <button type="submit" id="submitBtn">
+                                <span id="btnText">Send Message</span>
+                                <i class="fa fa-paper-plane" id="btnIcon"></i>
+                                <span id="btnSpinner" style="display:none;">
+                                    <i class="fa fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </form>
+
                 <div class="privacy">
                     <div class="icon">
                         <i class="bi bi-check2-circle"></i>
@@ -311,9 +327,9 @@
                                 </div>
                                 <div class="contact-text">
                                     <h2>Office</h2>
-                                    <p>PixelGrand Tech Hub
-                                    1234 Innovation Drive, Suite 500
-                                    Downtown Business District
+                                    <p>PixelGrand Tech Hub<br>
+                                    1234 Innovation Drive, Suite 500<br>
+                                    Downtown Business District<br>
                                     Tech City, TC 12345</p>
                                 </div>
                             </div>
@@ -323,9 +339,8 @@
                                 </div>
                                 <div class="contact-text">
                                     <h2>Phone</h2>
-                                    <p>Main: +1 (555) 123-4567</p>
-                                    <p>Support: +1 (555) 123-4568</p>
-                                    <p>Emergency: +1 (555) 123-4569</p>
+                                    <p>Main: +234 000 0000 000</p>
+                                    <p>Support: +234 000 0000 001</p>
                                 </div>
                             </div>
                             <div class="contact-box">
@@ -334,9 +349,8 @@
                                 </div>
                                 <div class="contact-text">
                                     <h2>Email Address</h2>
-                                    <p>General: hello@pixelgrand.com</p>
-                                    <p>Sales: sales@pixelgrand.com</p>
-                                    <p>Support: support@pixelgrand.com</p>
+                                    <p>General: info@pixelgrandtech.com</p>
+                                    <p>Support: support@pixelgrandtech.com</p>
                                 </div>
                             </div>
                             <div class="contact-box">
@@ -344,10 +358,10 @@
                                     <i class="far fa-clock"></i>
                                 </div>
                                 <div class="contact-text">
-                                    <h2>Business Hour</h2>
+                                    <h2>Business Hours</h2>
                                     <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                                     <p>Saturday: 10:00 AM - 4:00 PM</p>
-                                    <p>Sun: Closed</p>
+                                    <p>Sunday: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -364,42 +378,28 @@
 
     <section id="partners">
         <div class="container wow fadeIn" data-wow-delay="0.3s">
-
             <div class="heading wow fadeIn" data-wow-delay="0.1s">
                 <h2>Trusted Partners</h2>
             </div>
-
-            <!-- <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h2>Our Partners</h2>
-                    <p>Trusted by leading organizations worldwide</p>
-                </div>
-            </div> -->
-
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="partners-wrapper">
                         <div class="partners-track">
-
-                            <!-- Logos -->
                             <img src="img/partners/partner1.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner2.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner3.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner4.png" alt="" loading="lazy">
                             <img src="img/partners/partner5.jpg" alt="" loading="lazy">
-
                             <!-- Duplicate for smooth loop -->
                             <img src="img/partners/partner1.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner2.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner3.jpg" alt="" loading="lazy">
                             <img src="img/partners/partner4.png" alt="" loading="lazy">
                             <img src="img/partners/partner5.jpg" alt="" loading="lazy">
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -416,18 +416,10 @@
                             <p>Your creative and technological growth partner. We help brands stand out in a noisy world through strategic digital solutions.</p>
                         </div>
                         <div class="icon">
-                            <a href="">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="">
-                                <i class="bi bi-twitter-x"></i>
-                            </a>
-                            <a href="">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                            <a href="">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -451,7 +443,7 @@
                     <div class="quick-link">
                         <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
                         <li><a href="services.html#web-development">Web Development</a></li>
-                        <li><a href="services.html#branding">Branding & Identity</a></li>
+                        <li><a href="services.html#branding">Branding &amp; Identity</a></li>
                         <li><a href="services.html#content-creating">Content Creation</a></li>
                         <li><a href="services.html#tech-innovation">Tech Innovation</a></li>
                         <li><a href="services.html#consultation">Consultation</a></li>
@@ -462,67 +454,204 @@
                         <h2>Get In Touch</h2>
                     </div>
                     <div class="c-info">
-                        <li><i class="bi bi-telephone"></i> +1 (555) 123-4567</li>
-                        <li><i class="bi bi-envelope"></i> hello@pixelgrand.com</li>
+                        <li><i class="bi bi-telephone"></i> +234 000 0000 000</li>
+                        <li><i class="bi bi-envelope"></i> info@pixelgrandtech.com</li>
                         <li><i class="bi bi-geo-alt"></i> 123 Digital Street, Tech City</li>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="last-cont">
-                    <div class="copyright">
-                        <p>© <span class="year"></span> PixelGrand Tech Hub. All rights reserved.</p>
-                    </div>
-                    <div class="ptc">
-                        <a href="">
-                            Privacy Policy
-                        </a>
-                        <a href="">
-                            Terms Of Service
-                        </a>
-                        <a href="">
-                            Cookie Policy
-                        </a>
-                    </div>
+                <div class="copyright">
+                    <p>© <span class="year"></span> PixelGrand Tech Hub. All rights reserved.</p>
+                </div>
+                <div class="ptc">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms Of Service</a>
+                    <a href="">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- ===================== SCRIPTS ===================== -->
+
+    <!-- jQuery FIRST -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <!-- Bootstrap JS Bundle Installation -->
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- AOS JS Bundle Installation -->
+    <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
 
-    <!-- Google reCAPTCHA script -->
+    <!-- Google reCAPTCHA v2 -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-
-    <!-- WOW.js (For Animations) -->
+    <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <!-- Swiper JS Bundle Installation
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Google Analytics (For Tracking) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXXX-X');
-    </script>
+
     <!-- Utility Libraries -->
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <!-- Custom JS File -->
-    <script src="js/script.js"></script>    
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // ============================================================
+        // SPAM PROTECTION — CLIENT-SIDE (4 layers)
+        // ============================================================
+
+        // Layer 1: Record page load timestamp for timing check
+        document.getElementById('form_loaded_at').value = Date.now();
+
+        // Layer 2: Keyword blocklist — SEO/marketing/promo spam phrases
+        const SPAM_KEYWORDS = [
+            'seo', 'search engine optimization', 'search engine ranking',
+            'google ranking', 'page rank', 'backlink', 'link building',
+            'keyword ranking', 'organic traffic', 'digital marketing agency',
+            'web design agency', 'website redesign', 'website development service',
+            'improve your website', 'optimize your website', 'website audit',
+            'i noticed your website', 'your website needs', 'i checked your site',
+            'your site is not optimized', 'rank higher on google',
+            'increase your online presence', 'boost your traffic',
+            'affordable seo', 'cheap seo', 'guaranteed seo',
+            'we specialize in seo', 'our seo services', 'our marketing services',
+            'we can help you grow', 'we can help your business',
+            'we offer web design', 'we offer seo',
+            'hello, i came across', 'i visited your website',
+            'i found your website', 'i was browsing your site',
+            'dear website owner', 'dear business owner',
+            'dear sir/madam', 'to whom it may concern',
+            'crypto', 'bitcoin', 'investment opportunity',
+            'make money online', 'passive income', 'earn from home',
+            'click here', 'free trial', 'limited offer',
+            'unsubscribe', 'opt out', 'guest post', 'sponsored post',
+            'buy traffic', 'ppc campaign', 'ad campaign', 'google ads service',
+            'social media marketing', 'content marketing service'
+        ];
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form      = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText   = document.getElementById('btnText');
+            const btnIcon   = document.getElementById('btnIcon');
+            const btnSpinner = document.getElementById('btnSpinner');
+
+            if (form && submitBtn) {
+                form.addEventListener('submit', function (e) {
+
+                    // --- Honeypot check ---
+                    const honeypot = document.getElementById('website');
+                    if (honeypot && honeypot.value.trim() !== '') {
+                        e.preventDefault();
+                        // Fake success so bots think they got through
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Message Sent!',
+                            text: 'Thank you for reaching out. We will get back to you shortly.',
+                            confirmButtonColor: '#CE9928',
+                            timer: 4000,
+                            timerProgressBar: true
+                        });
+                        form.reset();
+                        return;
+                    }
+
+                    // --- Timing check: bots submit in under 3 seconds ---
+                    const loadedAt = parseInt(document.getElementById('form_loaded_at').value, 10);
+                    const elapsed  = Date.now() - loadedAt;
+                    if (elapsed < 3000) {
+                        e.preventDefault();
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Please slow down',
+                            text: 'The form was submitted too quickly. Please fill it in properly and try again.',
+                            confirmButtonColor: '#CE9928'
+                        });
+                        return;
+                    }
+
+                    // --- reCAPTCHA check ---
+                    const recaptchaResponse = grecaptcha.getResponse();
+                    if (!recaptchaResponse) {
+                        e.preventDefault();
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Please verify you are human',
+                            text: 'Kindly complete the reCAPTCHA verification before submitting.',
+                            confirmButtonColor: '#CE9928'
+                        });
+                        return;
+                    }
+
+                    // --- Keyword spam check ---
+                    const msgVal  = (document.getElementById('message').value  || '').toLowerCase();
+                    const nameVal = (document.getElementById('fullName').value || '').toLowerCase();
+                    const combined = msgVal + ' ' + nameVal;
+
+                    const foundSpam = SPAM_KEYWORDS.find(kw => combined.includes(kw));
+                    if (foundSpam) {
+                        e.preventDefault();
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Message Blocked',
+                            html: 'Your message appears to contain promotional or spam content.<br><br>If this is a genuine inquiry, please contact us directly:<br><strong>✉️ info@pixelgrandtech.com</strong>',
+                            confirmButtonColor: '#CE9928',
+                            confirmButtonText: 'OK'
+                        });
+                        return;
+                    }
+
+                    // --- All checks passed — show loading state ---
+                    if (btnText) btnText.style.display = 'none';
+                    if (btnIcon) btnIcon.style.display = 'none';
+                    if (btnSpinner) btnSpinner.style.display = 'inline';
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = '0.75';
+                });
+            }
+
+            // Handle redirect-based success/error messages from PHP
+            const urlParams = new URLSearchParams(window.location.search);
+            const status    = urlParams.get('status');
+            const message   = urlParams.get('message');
+
+            if (status && message) {
+                const decodedMessage = decodeURIComponent(message);
+                if (status === 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent!',
+                        text: decodedMessage,
+                        confirmButtonColor: '#CE9928',
+                        confirmButtonText: 'OK',
+                        timer: 5000,
+                        timerProgressBar: true,
+                        background: '#ffffff'
+                    });
+                } else if (status === 'error') {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops!',
+                        text: decodedMessage,
+                        confirmButtonColor: '#CE9928',
+                        confirmButtonText: 'OK',
+                        background: '#ffffff'
+                    });
+                }
+                // Clean URL after showing the alert
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    </script>
 </body>
 </html>
