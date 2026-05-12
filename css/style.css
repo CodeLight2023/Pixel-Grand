@@ -46,6 +46,65 @@ body {
   background: #eee;
   font-family: Arial, sans-serif;
 }
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--light-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.preloader .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+.preloader .loader::before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: var(--light-brown);
+    border-bottom-color: var(--light-brown);
+    border-left-color: var(--light-brown);
+    animation: loaderSpin 2s linear infinite;
+    z-index: -1;
+}
+.preloader .loader img {
+    width: 100px;
+    animation: loaderZoom 2s linear infinite;
+}
+@keyframes loaderZoom {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+@keyframes loaderSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.fade-out-animation {
+    opacity: 0;
+    visibility: hidden;
+}
 section {
     /* padding: 70px 0; */
     padding: 50px 20px 70px;
@@ -1026,12 +1085,12 @@ header nav .menu-btn .icon.menu-icon {
     color: #fff;
     font-size: 13px;
 }
-#industry .container .img .art-text h2 {
+#industry .container .img .img-text h2 {
     font-size: 18px;
     color: var(--navy);
     font-weight: 700;
 }
-#industry .container .img .art-text p {
+#industry .container .img .img-text p {
     font-size: 14px;
     margin-top: -10px;
     color: var(--black);
@@ -2798,17 +2857,18 @@ footer .ptc a:hover {
     }
     header nav ul {
         position: fixed;
-        top: 18%;
+        /* top: 18%; */
+        top: 90%;
         left: -100%;
         width: 250px;
         max-width: 100%;
         height: auto;
-        background: var(--glass-light);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        /* background: var(--glass-light); */
+        background: var(--head);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         border: 1px solid var(--glass-border-light);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-        border-left: 3px solid var(--golden-brown);
         text-align: center;
         margin: 0;
         padding: 5px;
@@ -2816,7 +2876,8 @@ footer .ptc a:hover {
         opacity: 0;
     }
     body.dark-mode header nav ul {
-        background: var(--glass-dark);
+        /* background: var(--glass-dark); */
+        background: var(--head);
         border-left: 3px solid var(--golden-brown);
         /* border: 3px solid var(--glass-border-dark); */
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);

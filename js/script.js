@@ -1,7 +1,17 @@
 const menuBtn = document.querySelector(".menu-btn .menu-icon i"),
       navMenu = document.querySelector("header nav ul"),
       darkModeBtn = document.querySelector(".menu-btn .mode-toggle i"),
+      preloader = document.querySelector('.preloader'),
       body = document.body;
+
+// Preloader 
+window.addEventListener('load', function() {
+    preloader.classList.add('fade-out-animation');
+
+    preloader.addEventListener("transitionend", () =>{
+        document.body.removeChild(document.querySelector(".preloader"));
+    });
+});
 
 // ----------------- Menu Toggle -----------------
 if(menuBtn && navMenu) {
@@ -180,6 +190,13 @@ btn.addEventListener("click", () => {
     });
 });
 });
+
+(function ($) {
+    "use strict";
+
+    // Initiate the wowjs
+    new WOW().init();
+})(jQuery);
 
 // Footer Year
 const year = document.querySelector('.year');

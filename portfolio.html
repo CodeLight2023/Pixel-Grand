@@ -21,9 +21,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" /> -->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <title>Pixel Grand Tech Hub</title>
 </head>
 <body>
+    <div class="preloader">
+        <div class="loader">
+            <img src="img/Logo3.png" alt="">
+        </div>
+    </div>
+    
     <header>
         <nav>
             <a href="/">
@@ -60,11 +69,11 @@
         <div class="container text-center">
             <div class="col-12 text-center">
                 <div class="portHeroContent">
-                    <h2>Our <span>Portfolio</span></h2>
-                    <p>Discover how we've transformed brands, built digital experiences, and delivered measurable results for businesses across industries. Every project tells a story of innovation, creativity, and strategic thinking.</p>
+                    <h2 class="animated slideInDown">Our <span>Portfolio</span></h2>
+                    <p class="animated slideInDown">Discover how we've transformed brands, built digital experiences, and delivered measurable results for businesses across industries. Every project tells a story of innovation, creativity, and strategic thinking.</p>
 
                     <div class="row pt-3">
-                        <div class="col-md-4">
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="port-info">
                                 <div class="icon">
                                     <i class="bi bi-eye"></i>
@@ -75,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="port-info">
                                 <div class="icon">
                                     <i class="bi bi-award"></i>
@@ -86,7 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="port-info">
                                 <div class="icon">
                                     <i class="bi bi-stars"></i>
@@ -98,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portH-btn mt-3">
+                    <div class="portH-btn mt-3 wow fadeIn" data-wow-delay="0.9s">
                         <a href="#">View Our Work <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -536,7 +545,7 @@
 
     <section id="brand">
         <div class="brand">
-            <div class="container-fluid">
+            <div class="container-fluid wow fadeIn" data-wow-delay="0.3s">
                 <div class="head">
                     <h2>Your Brand Deserves More Than<br> Presence — <span>It Deserves Influence</span></h2>
                     <p>Ready to transform your digital presence and drive real results? Let's create<br> something extraordinary together.</p>
@@ -567,7 +576,7 @@
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container wow fadeIn" data-wow-delay="0.3s">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="company-info">
@@ -651,6 +660,9 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <!-- Bootstrap JS Bundle Installation -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -659,10 +671,26 @@
     <script>
         AOS.init();
     </script>
+
+
+    <!-- WOW.js (For Animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <!-- Swiper JS Bundle Installation
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Google Analytics (For Tracking) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+    <!-- Utility Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
     <!-- Custom JS File -->
     <script src="js/script.js"></script>    
 </body>
