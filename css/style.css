@@ -2300,6 +2300,7 @@ header nav .menu-btn .icon.menu-icon {
     border-radius: 50px;
     margin: 5px;
     padding: 8px 20px;
+    color: var(--black);
     border: 1px solid #ddd;
 }
 #portfolio .filter-btn.active,

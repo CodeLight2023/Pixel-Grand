@@ -1,0 +1,133 @@
+# =========================================================
+# Pixel Grand Tech Hub - Optimized .htaccess
+# =========================================================
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# =========================================================
+# FORCE HTTPS
+# =========================================================
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# =========================================================
+# REMOVE .html EXTENSION
+# Example:
+# /about.html --> /about
+# =========================================================
+
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/.]+)/?$ $1.html [L]
+
+# =========================================================
+# MAKE index.html LOAD AS "/"
+# =========================================================
+
+DirectoryIndex index.html
+
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# =========================================================
+# ENABLE GZIP COMPRESSION
+# =========================================================
+
+<IfModule mod_deflate.c>
+
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+
+</IfModule>
+
+# =========================================================
+# BROWSER CACHING
+# =========================================================
+
+<IfModule mod_expires.c>
+
+    ExpiresActive On
+
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+
+    # CSS & JS
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+
+</IfModule>
+
+# =========================================================
+# CACHE CONTROL
+# =========================================================
+
+<IfModule mod_headers.c>
+
+    <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+
+</IfModule>
+
+# =========================================================
+# ENABLE KEEP-ALIVE
+# =========================================================
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# =========================================================
+# DISABLE DIRECTORY LISTING
+# =========================================================
+
+Options -Indexes
+
+# =========================================================
+# SECURITY HEADERS
+# =========================================================
+
+<IfModule mod_headers.c>
+
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+</IfModule>
+
+# =========================================================
+# CUSTOM ERROR PAGES
+# =========================================================
+
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
+ErrorDocument 503 /error/503.html
+
+# =========================================================
+# END
+# =========================================================
